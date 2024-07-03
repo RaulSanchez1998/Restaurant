@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorestaurante"
+    tools:context=".anadirRestaurante">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="290dp"
+        android:layout_height="326dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alwaysDrawnWithCache="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nombre:"
+                android:textAllCaps="true"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Nombre restaurante"
+                android:inputType="textPersonName"
+                android:maxLength="30"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Direccion"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etDireccion"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="Direccion del restaurante"
+                android:inputType="textPersonName"
+                android:maxLength="35" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Telefono:"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etTelef"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:hint="666666666"
+                android:inputType="number|phone"
+                android:maxLength="9" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Comentarios:"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:visibility="gone"
+                tools:text="-----------------------------------------------------------" />
+
+            <EditText
+                android:id="@+id/etComent"
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:background="@drawable/textview_border"
+                android:ems="10"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:maxLength="40" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#C3313131"
+                android:text="-----------------------------------------------------------"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="170dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:id="@+id/guardar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="alta"
+            app:srcCompat="@drawable/boton_guardar" />
+
+        <ImageView
+            android:id="@+id/cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="cancelar"
+            app:srcCompat="@drawable/cancelar_boton" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="292dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:onClick="estrecion"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView3">
+
+        <ImageView
+            android:id="@+id/imgSt1"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="estrecion"
+            app:srcCompat="@drawable/wadszxczx" />
+
+        <ImageView
+            android:id="@+id/imgSt2"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="estrecion"
+            app:srcCompat="@drawable/wadszxczx_vacio" />
+
+        <ImageView
+            android:id="@+id/imgSt3"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="estrecion"
+            app:srcCompat="@drawable/wadszxczx_vacio" />
+
+        <ImageView
+            android:id="@+id/imgSt4"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="estrecion"
+            app:srcCompat="@drawable/wadszxczx_vacio" />
+
+        <ImageView
+            android:id="@+id/imgSt5"
+            android:layout_width="58dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="estrecion"
+            app:srcCompat="@drawable/wadszxczx_vacio" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

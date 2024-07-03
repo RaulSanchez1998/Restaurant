@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondorestaurante"
+    tools:context=".preferencias">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="170dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="9dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/filtro_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <ImageView
+            android:id="@+id/orden_az"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/alfabeto_az" />
+
+        <ImageView
+            android:id="@+id/orden_za"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/alfabeto_za" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ELIGA EL FILTRO POR VALORACION"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/filtro_cinco"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_border"
+            app:srcCompat="@drawable/cinco_estrella_numeroc" />
+
+        <ImageView
+            android:id="@+id/filtro_cuatro"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_border"
+            app:srcCompat="@drawable/valoracion_numero_cuatro" />
+
+        <ImageView
+            android:id="@+id/filtro_tres"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_border"
+            app:srcCompat="@drawable/valoracion_numero_tres" />
+
+        <ImageView
+            android:id="@+id/filtro_dos"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_border"
+            app:srcCompat="@drawable/valoracion_numero_dos" />
+
+        <ImageView
+            android:id="@+id/filtro_una"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/textview_border"
+            app:srcCompat="@drawable/valoracion_numero" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="6dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/textview_border"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="ELIGA EL FILTRO POR ORDEN ALFABETO"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/filtro_no"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="75dp"
+        android:background="@drawable/textview_border"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:srcCompat="@android:drawable/ic_menu_rotate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
